@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="utf-8">
+        <title>WORD COUNTER</title>
+        <style>
+            body{
+                 background-color: rgb(137, 223, 220);
+                }
+                @font-face { font-family: 'CookieRunOTF-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff'); font-weight: normal; font-style: normal; }
+            h1{
+                text-align: center;
+                font-family: 'CookieRunOTF-Bold';
+                font-size: 50px;
+            }
+            h2{
+                text-align: center;
+                font-family: 'CookieRunOTF-Bold';
+            }
+            ul{
+                text-align: center;
+                font-family: 'CookieRunOTF-Bold';
+                border-width:80px;
+                border-style:solid;
+                border-color: white;
+                padding:40px;
+                margin:40px;
+                font-size: 20px;
+            }
+        
+          </style>
+    </head>
+
+    <body>
+        <h1>RESULT</h1>
+        <h2>당신이 입력한 텍스트는 {{total}}개 단어로 구성되어 있습니다. </h2>
+        
+        <ul>
+            <a href ="{% url 'home' %}">다시 하기</a><br>
+
+            <h3>입력한 텍스트 : </h3>
+            {{full}}
+
+            <h3>단어 카운트 : </h3>
+            {%for word, howmany in dictionary%}
+
+            {{word}} : {{howmany}}
+            <br>
+            {%endfor%}
+        </ul>
+
+    </body> 
+</html>

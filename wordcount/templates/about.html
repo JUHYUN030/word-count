@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="utf-8">
+
+        <title>WORD COUNTER</title>
+        <style>
+            body{
+                 background-color: rgb(137, 223, 220);
+                }
+                @font-face { font-family: 'CookieRunOTF-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff'); font-weight: normal; font-style: normal; }
+            h1{
+                text-align: center;
+                font-family: 'CookieRunOTF-Bold';
+                font-size: 50px;
+            }
+            ol{
+                text-align: center;
+                font-family: 'CookieRunOTF-Bold';
+                border-width:70px;
+                border-style:solid;
+                border-color: white;
+                padding:30px;
+                margin:20px;
+                font-size: 20px;
+            }
+
+          </style>
+    </head>
+
+    <body>
+        <h1>ABOUT</h1>
+        <ol>
+            WHAT
+            <p>WORD COUNTER는 사용자의 글을 파악하여 단어를 세어주는 웹사이트입니다.</p><br>
+            
+            WHO
+            <p>학생, 직장인 등 글자수를 알고 싶어하는 사람들에게 필요한 서비스입니다.</p><br>
+            HOW
+            <p>빈칸에 스크랩한 글이나 직접 작성한 글을 넣은 후에 COUNT 버튼을 누르면 됩니다.</p><br>
+            <a href="{%url 'home'%}">Home으로 돌아가기</a> 
+        </ol>
+    
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>WORD COUNTER</title>
+        <style>
+            body{
+                 background-color: rgb(137, 223, 220);
+                }
+                @font-face { font-family: 'CookieRunOTF-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff'); font-weight: normal; font-style: normal; }
+            h1{
+                text-align: center;
+                font-family: 'CookieRunOTF-Bold';
+                font-size: 65px;
+            }
+            h2{
+                text-align: center;
+                font-family: 'CookieRunOTF-Bold';
+
+            }
+            p{
+                text-align: center;
+                font-family: 'CookieRunOTF-Bold';
+                font-size: 20px;
+            }
+            form{
+                text-align: center;
+            }
+            input {
+                font-family: 'CookieRunOTF-Bold';
+                width:80px;
+                height:50px;
+                font-size:15px;
+            }
+          </style>
+    </head>
+
+    <body>
+        <h1>WORD COUNTER</h1>
+        <h2>빈칸에 글을 작성해주세요.</h2>
+        
+        <p><a href="{%url 'about'%}">ABOUT</a></p>
+
+        <form action="{%url 'result'%}">
+             <textarea cols="150" rows="20" name="fulltext"></textarea>
+             <br><br>
+             <input type="submit"  value="COUNT">
+        </form>
+    </body>
+</html>
